@@ -13,8 +13,8 @@ function checkSecondNumber(){
 function compute(){
     const fnum = document.getElementById("fnum").value;
     const snum = document.getElementById("snum").value;
-    var result; 
-    if(!isNaN(fnum) && !isNaN(snum)){
+    var result;
+    if(!isNaN(fnum) && !isNaN(snum) && fnum != "" && snum != ""){
         if(document.getElementById("plus").checked == true){
             result = 0;
             result += parseFloat(fnum);
