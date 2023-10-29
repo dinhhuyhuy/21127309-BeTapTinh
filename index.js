@@ -16,7 +16,9 @@ function compute(){
     var result; 
     if(!isNaN(fnum) && !isNaN(snum)){
         if(document.getElementById("plus").checked == true){
-            result = parseFloat(fnum) + parseFloat(snum);
+            result = 0;
+            result += parseFloat(fnum);
+            result += parseFloat(snum);
         }
         if(document.getElementById("minus").checked == true){
             result = fnum - snum;
