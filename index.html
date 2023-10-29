@@ -9,8 +9,9 @@
     </head>
     <body>
         <h1>Bé tập tính</h1>
-        <div class="container mt-5">
-            <form name="frm" onsubmit="return compute()">
+        
+            <form name="frm" action="">
+                <div class="container mt-5">
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="row">
@@ -83,13 +84,14 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <input type="submit" id="button" value="Tính">
+                        <input type="button" value="Tính" onclick="compute()">
                     </div>
                 </div>
                 <div class="row">
                     <p class="text">Thông báo: <span id="notif"></span></p>
                 </div>
+            </div>
             </form>
-        </div>
+        
     </body>
 </html>

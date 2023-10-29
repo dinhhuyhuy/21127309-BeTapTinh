@@ -29,11 +29,13 @@ function compute(){
         }
         if(result != null){
             document.getElementById("result").innerHTML = result;
+            document.getElementById("notif").innerHTML = "Tính hoàn tất.";
         }else{
+            document.getElementById("result").innerHTML = null;
             document.getElementById("notif").innerHTML = "Chưa chọn phép tính";
         }
-        
     }else{
+        document.getElementById("result").innerHTML = null;
         document.getElementById("notif").innerHTML = "Chưa đủ 2 số hợp lệ";
     }
 }
